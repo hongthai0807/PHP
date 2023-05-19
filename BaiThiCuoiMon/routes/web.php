@@ -1,7 +1,6 @@
 <?php
-use App\Http\Controllers\FeedbackController;
-use Illuminate\Support\Facades\Route;
 
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,10 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('login');
 });
-Route::get('/login',[FeedbackController::class,'login']);
-Route::get('/admin',[FeedbackController::class,'admin'])->name('admin');
-Route::get('/user',[FeedbackController::class,'admin'])->name('user');
-
-
+?>
