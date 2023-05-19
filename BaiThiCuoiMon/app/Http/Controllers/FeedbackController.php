@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
 
 class FeedbackController extends BaseController
@@ -17,7 +18,6 @@ class FeedbackController extends BaseController
         return view("login");
         
         }
-<<<<<<< HEAD
     
      function admin(){
 
@@ -26,16 +26,6 @@ class FeedbackController extends BaseController
          return view("admin");
             
            }    
-=======
-        function admin(){
-
-            //code here
-            
-            return view("admin");
-            
-            }    
-
->>>>>>> 44e4f39829844f16eafdd5b3b106ce139a8185d7
     public function checkUserType(){
         //code here
         if (!Auth::user()){
@@ -49,7 +39,11 @@ class FeedbackController extends BaseController
         }
     
     }
+    Public function checksession(Request $request){
+        $data=$request->input();
+        $request->session()->put('email',$data['email']);
         
+    }
         }
         
 ?>

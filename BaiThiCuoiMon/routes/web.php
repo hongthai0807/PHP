@@ -18,5 +18,5 @@ Route::get('/', function () {
     return view('login');
 });
 Route::get('/admin',[App\Http\Controllers\FeedbackController::class,'admin'])->name('admin');
-
+Route::post('/user',[FeedbackController::class,'checksession']);
 ?>
