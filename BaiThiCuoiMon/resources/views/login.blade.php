@@ -12,8 +12,8 @@
         <div class="container">
             <div class="row mb-5">
                 <div class="col-md-8 col-xl-6 text-center mx-auto">
-                    <h2>Log in</h2>
-                    <p contenteditable="true">Welcome !</p>
+                    <h2 style="color: royalblue">Log in</h2>
+                    <p contenteditable="true" style="color: violet">Welcome !</p>
                 </div>
             </div>
             <div class="row d-flex justify-content-center">
