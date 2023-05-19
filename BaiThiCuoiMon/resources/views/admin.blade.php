@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 @extends('layout.layout')
+=======
+@extends('layouts.layouts')
+>>>>>>> 44e4f39829844f16eafdd5b3b106ce139a8185d7
 
 @section('title_page')
 
