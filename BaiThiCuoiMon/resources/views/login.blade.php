@@ -7,7 +7,7 @@
     <title>FORM LOGIN</title>
 </head>
 <body>
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href=" ">
     <form class="form">
     <div class="title">Welcome to Devsne,<br><span>please sign up to continue</span></div>
     <input type="email" placeholder="Email" name="email" class="input">
