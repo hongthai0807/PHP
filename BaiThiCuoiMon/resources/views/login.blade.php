@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
     <title>Untitled</title>
+    <link rel="stylesheet" href="{{assets('bootstrap/bootstrap.css')}}">
 </head>
 
 <body>
