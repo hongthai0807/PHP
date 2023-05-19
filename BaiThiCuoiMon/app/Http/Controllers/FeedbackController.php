@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
 
 class FeedbackController extends BaseController
@@ -38,7 +39,11 @@ class FeedbackController extends BaseController
         }
     
     }
+    Public function checksession(Request $request){
+        $data=$request->input();
+        $request->session()->put('email',$data['email']);
         
+    }
         }
         
 ?>

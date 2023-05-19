@@ -23,7 +23,8 @@
                             <div class="bs-icon-xl bs-icon-circle bs-icon-primary bs-icon my-4">
                               <i class="fa-solid fa-user fa-2xl"></i>
                             </div>
-                            <form class="text-center" method="post" action="" style="margin: 6vh auto 0">
+                            <form class="text-center" method="post" action="/user" style="margin: 6vh auto 0">
+                              @csrf
                                 <div class="mb-3"><input class="form-control" type="email" name="email" placeholder="Email" /></div>
                                 <div class="mb-3"><input class="form-control" type="password" name="password" placeholder="Password" /></div>
                                 <div class="mb-3"><button class="btn btn-primary d-block w-100" type="submit">Login</button></div>
