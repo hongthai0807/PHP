@@ -7,15 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>RoyalUI Admin</title>
   <!-- plugins:css -->
-  <link rel="stylesheet" href="{{asset('RoyalUI-Admin-master/vendors/ti-icons/css/themify-icons.css')}}">
-  <link rel="stylesheet" href="{{asset('RoyalUI-Admin-master/vendors/base/vendor.bundle.base.css')}}">
+  <link rel="stylesheet" href="{{asset('bootstrap/vendors/ti-icons/css/themify-icons.css')}}">
+  <link rel="stylesheet" href="{{asset('bootstrap/vendors/base/vendor.bundle.base.css')}}">
   <!-- endinject -->
   <!-- plugin css for this page -->
   <!-- End plugin css for this page -->
   <!-- inject:css -->
-  <link rel="stylesheet" href="{{asset('RoyalUI-Admin-master/css/maps/style.css')}}">
+  <link rel="stylesheet" href="{{asset('bootstrap/css/style.css')}}">
   <!-- endinject -->
-  <link rel="shortcut icon" href="{{asset('RoyalUI-Admin-master/images/favicon.png')}}" />
+  <link rel="shortcut icon" href="{{asset('bootstrap/images/favicon.png')}}" />
   <title>@yield('tittle_page')</title>
   @yield('mycss')
 </head>
@@ -24,8 +24,8 @@
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="{{asset('RoyalUI-Admin-master/images/logo.svg')}}" class="mr-2" alt="logo"/></a>
-        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="{{asset('RoyalUI-Admin-master/images/logo-mini.svg')}}" alt="logo"/></a>
+        <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="{{asset('bootstrap/images/logo.svg')}}" class="mr-2" alt="logo"/></a>
+        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="{{asset('bootstrap/images/logo-mini.svg')}}" alt="logo"/></a>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
         <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -52,7 +52,7 @@
               <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
               <a class="dropdown-item">
                 <div class="item-thumbnail">
-                    <img src="{{asset('RoyalUI-Admin-master/images/faces/face4.jpg')}}" alt="image" class="profile-pic">
+                    <img src="{{asset('bootstrap/images/faces/face4.jpg')}}" alt="image" class="profile-pic">
                 </div>
                 <div class="item-content flex-grow">
                   <h6 class="ellipsis font-weight-normal">David Grey
@@ -64,7 +64,7 @@
               </a>
               <a class="dropdown-item">
                 <div class="item-thumbnail">
-                    <img src="{{asset('RoyalUI-Admin-master/images/faces/face2.jpg')}}" alt="image" class="profile-pic">
+                    <img src="{{asset('bootstrap/images/faces/face2.jpg')}}" alt="image" class="profile-pic">
                 </div>
                 <div class="item-content flex-grow">
                   <h6 class="ellipsis font-weight-normal">Tim Cook
@@ -76,7 +76,7 @@
               </a>
               <a class="dropdown-item">
                 <div class="item-thumbnail">
-                    <img src="{{asset('RoyalUI-Admin-master/images/faces/face3.jpg')}}" alt="image" class="profile-pic">
+                    <img src="{{asset('bootstrap/images/faces/face3.jpg')}}" alt="image" class="profile-pic">
                 </div>
                 <div class="item-content flex-grow">
                   <h6 class="ellipsis font-weight-normal"> Johnson
@@ -138,7 +138,7 @@
           </li>
           <li class="nav-item nav-profile dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
-              <img src="{{asset('RoyalUI-Admin-master/images/faces/face28.jpg')}}" alt="profile"/>
+              <img src="{{asset('bootstrap/images/faces/face28.jpg')}}" alt="profile"/>
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
               <a class="dropdown-item">
@@ -176,31 +176,31 @@
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="{{asset('RoyalUI-Admin-master/pages/ui-features/buttons.html')}}">Buttons</a></li>
-                <li class="nav-item"> <a class="nav-link" href="{{asset('RoyalUI-Admin-master/pages/ui-features/typography.html')}}">Typography</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{asset('bootstrap/pages/ui-features/buttons.html')}}">Buttons</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{asset('bootstrap/pages/ui-features/typography.html')}}">Typography</a></li>
               </ul>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{asset('RoyalUI-Admin-master/pages/forms/basic_elements.html')}}">
+            <a class="nav-link" href="{{asset('bootstrap/pages/forms/basic_elements.html')}}">
               <i class="ti-layout-list-post menu-icon"></i>
               <span class="menu-title">Form elements</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{asset('RoyalUI-Admin-master/pages/charts/chartjs.html')}}">
+            <a class="nav-link" href="{{asset('bootstrap/pages/charts/chartjs.html')}}">
               <i class="ti-pie-chart menu-icon"></i>
               <span class="menu-title">Charts</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{asset('RoyalUI-Admin-master/pages/tables/basic-table.html')}}">
+            <a class="nav-link" href="{{asset('bootstrap/pages/tables/basic-table.html')}}">
               <i class="ti-view-list-alt menu-icon"></i>
               <span class="menu-title">Tables</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{asset('RoyalUI-Admin-master/pages/icons/themify.html')}}">
+            <a class="nav-link" href="{{asset('bootstrap/pages/icons/themify.html')}}">
               <i class="ti-star menu-icon"></i>
               <span class="menu-title">Icons</span>
             </a>
@@ -213,16 +213,16 @@
             </a>
             <div class="collapse" id="auth">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="{{asset('RoyalUI-Admin-master/pages/samples/login.html')}}"> Login </a></li>
-                <li class="nav-item"> <a class="nav-link" href="{{asset('RoyalUI-Admin-master/pages/samples/login-2.html')}}"> Login 2 </a></li>
-                <li class="nav-item"> <a class="nav-link" href="{{asset('RoyalUI-Admin-master/pages/samples/register.html')}}"> Register </a></li>
-                <li class="nav-item"> <a class="nav-link" href="{{asset('RoyalUI-Admin-master/pages/samples/register-2.html')}}"> Register 2 </a></li>
-                <li class="nav-item"> <a class="nav-link" href="{{asset('RoyalUI-Admin-master/pages/samples/lock-screen.html')}}"> Lockscreen </a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{asset('bootstrap/pages/samples/login.html')}}"> Login </a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{asset('bootstrap/pages/samples/login-2.html')}}"> Login 2 </a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{asset('bootstrap/pages/samples/register.html')}}"> Register </a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{asset('bootstrap/pages/samples/register-2.html')}}"> Register 2 </a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{asset('bootstrap/pages/samples/lock-screen.html')}}"> Lockscreen </a></li>
               </ul>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{asset('RoyalUI-Admin-master/documentation/documentation.html')}}">
+            <a class="nav-link" href="{{asset('bootstrap/documentation/documentation.html')}}">
               <i class="ti-write menu-icon"></i>
               <span class="menu-title">Documentation</span>
             </a>
@@ -576,19 +576,19 @@
   <!-- container-scroller -->
 
   <!-- plugins:js -->
-  <script src="{{asset('RoyalUI-Admin-master/vendors/base/vendor.bundle.base.js')}}"></script>
+  <script src="{{asset('bootstrap/vendors/base/vendor.bundle.base.js')}}"></script>
   <!-- endinject -->
   <!-- Plugin js for this page-->
-  <script src="{{asset('RoyalUI-Admin-master/vendors/chart.js/Chart.min.js')}}"></script>
+  <script src="{{asset('bootstrap/vendors/chart.js/Chart.min.js')}}"></script>
   <!-- End plugin js for this page-->
   <!-- inject:js -->
-  <script src="{{asset('RoyalUI-Admin-master/js/off-canvas.js')}}"></script>
-  <script src="{{asset('RoyalUI-Admin-master/js/hoverable-collapse.js')}}"></script>
-  <script src="{{asset('RoyalUI-Admin-master/js/template.js')}}"></script>
-  <script src="{{asset('RoyalUI-Admin-master/js/todolist.js')}}"></script>
+  <script src="{{asset('bootstrap/js/off-canvas.js')}}"></script>
+  <script src="{{asset('bootstrap/js/hoverable-collapse.js')}}"></script>
+  <script src="{{asset('bootstrap/js/template.js')}}"></script>
+  <script src="{{asset('bootstrap/js/todolist.js')}}"></script>
   <!-- endinject -->
   <!-- Custom js for this page-->
-  <script src="{{asset('RoyalUI-Admin-master/js/dashboard.js')}}"></script>
+  <script src="{{asset('bootstrap/js/dashboard.js')}}"></script>
   <!-- End custom js for this page-->
   @yield('myscript')
 </body>

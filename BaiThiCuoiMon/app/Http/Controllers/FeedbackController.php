@@ -42,7 +42,7 @@ class FeedbackController extends BaseController
     Public function checksession(Request $request){
         $data=$request->input();
         $request->session()->put('email',$data['email']);
-        
+        return redirect('admin');
     }
         }
         
