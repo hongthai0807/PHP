@@ -17,6 +17,14 @@ class FeedbackController extends BaseController
         return view("login");
         
         }
+    
+     function admin(){
+
+            //code here
+            
+         return view("admin");
+            
+           }    
     public function checkUserType(){
         //code here
         if (!Auth::user()){
