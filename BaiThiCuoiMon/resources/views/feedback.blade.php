@@ -92,29 +92,12 @@ input[type=submit]:hover {
     </div>    
     <div class="row">    
         <div class="col-25">    
-          <label for="email">Mail Id</label>    
+          <label for="email">Email</label>    
         </div>    
         <div class="col-75">    
           <input type="email" id="email" name="mailid" placeholder="Your mail id..">    
         </div>    
-      </div>    
-    <div class="row">    
-      <div class="col-25">    
-        <label for="country">Country</label>    
-      </div>    
-      <div class="col-75">    
-        <select id="country" name="country">    
-            <option value="none">Select Country</option>    
-          <option value="australia">Australia</option>    
-          <option value="canada">Canada</option>    
-          <option value="usa">USA</option>    
-          <option value="russia">Russia</option>    
-          <option value="japan">Japan</option>    
-          <option value="india">India</option>    
-          <option value="china">China</option>    
-        </select>    
-      </div>    
-    </div>    
+      </div>     
     <div class="row">    
       <div class="col-25">    
         <label for="feed_back">Feed Back</label>    
