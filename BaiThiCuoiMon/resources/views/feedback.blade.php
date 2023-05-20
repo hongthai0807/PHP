@@ -95,7 +95,7 @@ input[type=submit]:hover {
           <label for="email">Email</label>    
         </div>    
         <div class="col-75">    
-          <input type="email" id="email" name="mailid" placeholder="Your mail id..">    
+          <input type="email" id="email" name="mailid" placeholder="Your email ..">    
         </div>    
       </div>     
     <div class="row">    
