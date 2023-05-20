@@ -31,5 +31,6 @@ Route::get('/logout',function(){
   if(!Session()->has('email')){
     return view('login');
   }
-})
+});
+Route::get('/feedback',[FeedbackController::class,'feedback']);
 ?>

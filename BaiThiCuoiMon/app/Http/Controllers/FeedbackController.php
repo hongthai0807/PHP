@@ -44,6 +44,10 @@ class FeedbackController extends BaseController
         $request->session()->put('email',$data['email']);
         return redirect('admin');
     }
+    public function feedback(){
+        return view('feedback');
+    }
         }
+       
         
 ?>
