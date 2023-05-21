@@ -6,7 +6,11 @@
     <title>Form Login</title>
     <link rel="stylesheet" href="{{asset('bootstrap/css/bootstrap.css')}}">
 </head>
-
+@if(\Session::has('message'))
+<div class="alert alert-info">
+    {{ \Session::get('message') }}
+</div>
+@endif
 <body style="background: url(http://127.0.0.1:8000/images/background-login.webp);background-repeat: no-repeat;background-size: cover;">
     <section class="py-4 py-xl-5">
         <div class="container">
@@ -23,10 +27,19 @@
                             <div class="bs-icon-xl bs-icon-circle bs-icon-primary bs-icon my-4">
                               <i class="fa-solid fa-user fa-2xl"></i>
                             </div>
+                          
                             <form class="text-center" method="post" action="/user" style="margin: 6vh auto 0">
                               @csrf
-                                <div class="mb-3"><input class="form-control" type="email" name="email" placeholder="Email" /></div>
-                                <div class="mb-3"><input class="form-control" type="password" name="password" placeholder="Password" /></div>
+                                <div class="mb-3"><input class="form-control" type="email" name="email" placeholder="Email" />
+                                @if($errors->has('email'))
+                                <span class="text-danger">{{ $errors->first('email') }}</span>
+                                @endif
+                                </div>
+                                <div class="mb-3"><input class="form-control" type="password" name="password" placeholder="Password" />
+                                    @if($errors->has('password'))
+                                    <span class="text-danger">{{ $errors->first('password') }}</span>
+                                    @endif
+                                </div>
                                 <div class="mb-3"><button class="btn btn-primary d-block w-100" type="submit">Login</button></div>
                                 <p class="text-muted">Forgot your password?</p>
                             </form>

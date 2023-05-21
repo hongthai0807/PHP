@@ -6,6 +6,8 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Session;
 use Illuminate\Routing\Controller as BaseController;
 
 class FeedbackController extends BaseController
@@ -42,12 +44,30 @@ class FeedbackController extends BaseController
     Public function checksession(Request $request){
         $data=$request->input();
         $request->session()->put('email',$data['email']);
-        return redirect('admin');
+        $request->validate([
+            'email'=>'required',
+            'password'=>'required',
+        ]);
+        $create=$request->only('email','password');
+        if(Auth::attempt($create)){
+            return redirect('admin')->intended('dashboard')->with('message','Signed in');
+        }
+        return redirect('login')->with('message','login detail are not valid');
     }
+   
     public function feedback(){
         return view('feedback');
     }
-        }
-       
+    public function student(){
         
+       
+    }     
+    public function History(){
+        $query=DB::table("sinhvien");
+        $query=$query->select('*');
+        $data=$query->paginate(3);
+        return view('History',$data);
+    }
+
+}
 ?>

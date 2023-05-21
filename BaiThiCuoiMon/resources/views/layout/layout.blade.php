@@ -20,6 +20,7 @@
   @yield('mycss')
 </head>
 <body>
+
   <div class="container-scroller">
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
@@ -145,7 +146,10 @@
                 <i class="ti-settings text-primary"></i>
                 Settings
               </a>
-             
+              <a class="dropdown-item" href="History">
+                <i class="fa-sharp fa-light fa-clock-rotate-left"></i>
+                Properties
+              </a>
               <a class="dropdown-item" href="logout">
                 <i class="ti-power-off text-primary"></i>
                 Logout
