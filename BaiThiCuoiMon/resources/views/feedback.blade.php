@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">    
 <style>    
 h2{
-  margin-left: 40%;
-  font-size:200%;
+  margin-left: 38%;
+  font-size:300%;
 }
 * {    
   box-sizing: border-box;    
@@ -35,16 +35,18 @@ label {
 input[type=submit] {    
   background-color: rgb(37, 116, 161);    
   color: white;    
-  padding: 12px 20px;    
+  padding: 20px 50px;    
   border: none;    
   border-radius: 4px;    
   cursor: pointer;    
-  float: right;    
+  margin: 1% 45%;   
   font-weight: bold;
+  font-size: 120%;
 }    
     
 input[type=submit]:hover {    
-  background-color: #45a049;    
+  background-color:cadetblue;    
+  color: black;
 }    
     
 .container {    
@@ -55,9 +57,10 @@ input[type=submit]:hover {
     
 .col-25 {    
   float: left;    
-  width: 25%;    
+  width: 15%;    
   margin-top: 6px;    
   font-weight: bold;
+  font-size: 120%;
 }    
     
 .col-75 {    
