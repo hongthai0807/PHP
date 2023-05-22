@@ -40,6 +40,7 @@ input[type=submit] {
   border-radius: 4px;    
   cursor: pointer;    
   float: right;    
+  font-weight: bold;
 }    
     
 input[type=submit]:hover {    
