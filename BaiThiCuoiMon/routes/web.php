@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
  Route::get('/', function () {
-      return view('welcome');
+      return view('login');
   });
 Route::get('/admin',[App\Http\Controllers\FeedbackController::class,'admin'])->name('admin');
 Route::post('/user',[FeedbackController::class,'checksession'])->name('user');
