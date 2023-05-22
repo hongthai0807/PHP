@@ -1,9 +1,13 @@
 <!DOCTYPE html>   
-<title> Form feedback</title> 
+<title> Form Feedback </title> 
 <html>    
 <head>    
 <meta name="viewport" content="width=device-width, initial-scale=1">    
 <style>    
+h2{
+  margin-left: 40%;
+  font-size:200%;
+}
 * {    
   box-sizing: border-box;    
 }    
@@ -52,12 +56,14 @@ input[type=submit]:hover {
   float: left;    
   width: 25%;    
   margin-top: 6px;    
+  font-weight: bold;
 }    
     
 .col-75 {    
   float: left;    
   width: 75%;    
   margin-top: 6px;    
+  font-weight: bold;
 }    
     
 /* Clear floats after the columns */    
@@ -71,23 +77,15 @@ input[type=submit]:hover {
 </style>    
 </head>    
 <body>    
-<h2>FEED BACK FORM</h2>    
+<h2> F E E D B A C K  </h2>    
 <div class="container">    
   <form>    
     <div class="row">    
       <div class="col-25">    
-        <label for="fname">First Name</label>    
+        <label for="fname">Full Name</label>    
       </div>    
       <div class="col-75">    
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">    
-      </div>    
-    </div>    
-    <div class="row">    
-      <div class="col-25">    
-        <label for="lname">Last Name</label>    
-      </div>    
-      <div class="col-75">    
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">    
+        <input type="text" id="fname" name="fullname" placeholder="Your full name..">    
       </div>    
     </div>    
     <div class="row">    
@@ -100,10 +98,10 @@ input[type=submit]:hover {
       </div>     
     <div class="row">    
       <div class="col-25">    
-        <label for="feed_back">Feed Back</label>    
+        <label for="feed_back">Feedback</label>    
       </div>    
       <div class="col-75">    
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>    
+        <textarea id="subject" name="subject" placeholder="Write here.." style="height:200px"></textarea>    
       </div>    
     </div>    
     <div class="row">    
