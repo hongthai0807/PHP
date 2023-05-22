@@ -36,3 +36,5 @@ Route::get('/feedback',[FeedbackController::class,'feedback']);
 Route::get('/student',[FeedbackController::class,'student']);
 Route::get('/History',[FeedbackController::class,'history']);
 ?>
+
+

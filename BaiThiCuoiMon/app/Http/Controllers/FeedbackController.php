@@ -44,15 +44,10 @@ class FeedbackController extends BaseController
     Public function checksession(Request $request){
         $data=$request->input();
         $request->session()->put('email',$data['email']);
-        $request->validate([
-            'email'=>'required',
-            'password'=>'required',
-        ]);
-        $create=$request->only('email','password');
-        if(Auth::attempt($create)){
-            return redirect('admin')->intended('dashboard')->with('message','Signed in');
-        }
-        return redirect('login')->with('message','login detail are not valid');
+       
+       
+        
+        return redirect('admin')->with('message','login detail are not valid');
     }
    
     public function feedback(){
