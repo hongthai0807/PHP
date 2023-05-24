@@ -42,12 +42,27 @@ class FeedbackController extends BaseController
     
     }
     Public function checksession(Request $request){
-        $data=$request->input();
-        $request->session()->put('email',$data['email']);
-       
-       
+        $data=$request->input('usrname');
+        $data3=$request->input('password');
         
-        return redirect('admin')->with('message','login detail are not valid');
+       $data4=DB::select('select id from admin where  Username=? and    Password=? and usr_Type=?',[$data,$data3,'usr']);
+       $data5=DB::select('select id from admin where  Username=? and    Password=? and usr_Type=?',[$data,$data3,'adm']);
+      
+        if($data4){
+            $request->session()->put('usrname',$data);
+            $request->session()->put('password',$data3);
+           return redirect('student');
+           
+        }else if($data5){
+            $request->session()->put('Home',$data);
+            $request->session()->put('class',$data3);
+            return redirect('admin');
+        }else{
+            return redirect('login');
+        }
+       
+
+
     }
    
     public function feedback(){
@@ -55,12 +70,12 @@ class FeedbackController extends BaseController
     }
     public function student(){
         
-       
+       return view('student1');
     }     
     public function History(){
         $query=DB::table("sinhvien");
         $query=$query->select('*');
-        $data=$query->paginate(3);
+        $data=$query->paginate(1);
         return view('History',$data);
     }
 

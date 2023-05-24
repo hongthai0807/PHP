@@ -40,7 +40,7 @@
         	<img src="{{asset('bootstrap/images/faces/face28.jpg')}}" />
             @foreach($data as $row)
             <h2>MSSV: {{ $row->ID_student }}</h2>
-            <h2>Ho va ten {{ $row->Name_Student  }}</h2>
+            <h2>Firstname: {{ $row->First_name  }}</h2>
             <h2>Email:{{ $row->Email }}</h2>
             @endforeach
            

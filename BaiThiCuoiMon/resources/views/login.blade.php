@@ -30,15 +30,12 @@
                           
                             <form class="text-center" method="post" action="/user" style="margin: 6vh auto 0">
                               @csrf
-                                <div class="mb-3"><input class="form-control" type="email" name="email" placeholder="Email" />
-                                @if($errors->has('email'))
-                                <span class="text-danger">{{ $errors->first('email') }}</span>
-                                @endif
+                                <div class="mb-3"><input class="form-control" type="name" name="usrname" placeholder="Email" />
+         
+                          
                                 </div>
                                 <div class="mb-3"><input class="form-control" type="password" name="password" placeholder="Password" />
-                                    @if($errors->has('password'))
-                                    <span class="text-danger">{{ $errors->first('password') }}</span>
-                                    @endif
+                                 
                                 </div>
                                 <div class="mb-3"><button class="btn btn-primary d-block w-100" type="submit">Login</button></div>
                                 <p class="text-muted">Forgot your password?</p>

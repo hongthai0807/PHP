@@ -147,7 +147,10 @@
                 <i class="ti-settings text-primary"></i>
                 Settings
               </a>
-             
+              <a class="dropdown-item" href="History">
+                <i class="ti-settings text-primary"></i>
+             Properties
+              </a>
               <a class="dropdown-item" href="logout">
                 <i class="ti-power-off text-primary"></i>
                 Logout
@@ -251,25 +254,7 @@
                 </div>
               </div>
             </div>
-            <table class="table">
-              <thead>
-                <tr>
-                 
-                  <th scope="col">ID_student</th>
-                  <th scope="col">Name_Student</th>
-                  <th scope="col">Email</th>
-                </tr>
-              </thead>
-              <tbody>
-                @foreach($data as $row)
-                <tr>
-                  <th scope="row">{{ $row->ID_student}}</th>
-                  <td>{{ $row->Name_Student }}</td>
-                  <td>{{ $row->Email }}</td>
-                </tr>
-               @endforeach
-              </tbody>
-            </table>
+            
           </div>
             
         <!-- content-wrapper ends -->

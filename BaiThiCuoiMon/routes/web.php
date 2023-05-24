@@ -21,14 +21,18 @@ Route::get('/admin',[App\Http\Controllers\FeedbackController::class,'admin'])->n
 Route::post('/user',[FeedbackController::class,'checksession'])->name('user');
 
 Route::get('/login',function(){
-    if(session()->has('email')){
-        return redirect('admin');
+    if(session()->has('usrname') and session()->has('password')){
+        return redirect('student');
+    }else if(session()->has('Home') and session()->has('class')){
+      return redirect('admin');
     }
   return view('login');
 })->name('login');
+
 Route::get('/logout',function(){
-  Session()->forget('email');
-  if(!Session()->has('email')){
+  Session()->forget('usrname');
+  session()->forget('password');
+  if(!Session()->has('usrname') and  !session()->has('password')){
     return view('login');
   }
 });
