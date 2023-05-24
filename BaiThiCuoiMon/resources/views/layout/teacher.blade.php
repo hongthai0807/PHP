@@ -19,6 +19,11 @@
   <title>@yield('tittle_page')</title>
   @yield('mycss')
 </head>
+<style>
+  .dropdown-item{
+    font-size: 150%;
+  }
+</style>
 <body>
 
   <div class="container-scroller">
@@ -154,13 +159,13 @@
         <ul class="nav">
           <li class="nav-item">
             <a class="nav-link" href="index.html">
-              <i class="ti-shield menu-icon"></i>
+              <i class="ti-thumb-up menu-icon"></i>
               <span class="menu-title">Đã duyệt</span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-              <i class="ti-palette menu-icon"></i>
+              <i class="ti-thumb-down menu-icon"></i>
               <span class="menu-title">Chưa duyệt</span>
               <i class="menu-arrow"></i>
             </a>
