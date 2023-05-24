@@ -65,8 +65,8 @@ class FeedbackController extends BaseController
 
     }
    
-    public function feedback(){
-        return view('feedback');
+    public function teacher(){
+        return view('teacher1');
     }
     public function student(){
         
