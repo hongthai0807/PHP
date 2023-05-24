@@ -1,4 +1,4 @@
-@extends('student')
+@extends('layout.student')
 
 @section('title_page')
 
