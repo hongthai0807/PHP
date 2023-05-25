@@ -20,13 +20,13 @@
   @yield('mycss')
 </head>
 <style>
-  .dropdown-item{
-    font-size: 150%;
-    margin-left: 80%;
-  }
-  .dropdown-item:hover{
-    background-color:#888888	;
-  }
+.dropdown-item{
+font-size: 150%;
+}
+
+.dropdown-item:hover{
+background-color:#999999	;
+}
 </style>
 <body>
 
