@@ -19,15 +19,30 @@
   <title>@yield('tittle_page')</title>
   @yield('mycss')
 </head>
+<<<<<<< HEAD
+=======
+<style>
+.dropdown-item{
+font-size: 150%;
+}
+
+.dropdown-item:hover{
+background-color:#999999	;
+}
+</style>
+>>>>>>> 0ff4bc926c3240709fa33b681d80926d1c4a75a0
 <body>
 
   <div class="container-scroller">
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+<<<<<<< HEAD
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
         <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="{{asset('bootstrap/images/logo.svg')}}" class="mr-2" alt="logo"/></a>
         <a class="navbar-brand brand-logo-mini" href="index.html"><img src="{{asset('bootstrap/images/logo-mini.svg')}}" alt="logo"/></a>
       </div>
+=======
+>>>>>>> 0ff4bc926c3240709fa33b681d80926d1c4a75a0
       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
         <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
           <span class="ti-view-list"></span>
@@ -46,10 +61,14 @@
         </ul>
         <ul class="navbar-nav navbar-nav-right">
           <li class="nav-item dropdown mr-1">
+<<<<<<< HEAD
             <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center" id="messageDropdown" href="#" data-toggle="dropdown">
               <i class="ti-email mx-0"></i>
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="messageDropdown">
+=======
+           <!-- <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="messageDropdown">
+>>>>>>> 0ff4bc926c3240709fa33b681d80926d1c4a75a0
               <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
               <a class="dropdown-item">
                 <div class="item-thumbnail">  
@@ -87,6 +106,7 @@
                   </p>
                 </div>
               </a>
+<<<<<<< HEAD
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -94,6 +114,11 @@
               <i class="ti-bell mx-0"></i>
               <span class="count"></span>
             </a>
+=======
+            </div> -->
+          </li>
+          <li class="nav-item dropdown">
+>>>>>>> 0ff4bc926c3240709fa33b681d80926d1c4a75a0
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="notificationDropdown">
               <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
               <a class="dropdown-item">
@@ -138,6 +163,7 @@
             </div>
           </li>
           <li class="nav-item nav-profile dropdown">
+<<<<<<< HEAD
             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
               <img src="{{asset('bootstrap/images/faces/face28.jpg')}}" alt="profile" style="
               width: 160px;/>
@@ -151,6 +177,8 @@
                 <i class="ti-settings text-primary"></i>
              Properties
               </a>
+=======
+>>>>>>> 0ff4bc926c3240709fa33b681d80926d1c4a75a0
               <a class="dropdown-item" href="logout">
                 <i class="ti-power-off text-primary"></i>
                 Logout
@@ -165,24 +193,39 @@
       </div>
     </nav>
     <!-- partial -->
+<<<<<<< HEAD
     <div class="container-fluid page-body-wrapper">
+=======
+     <div class="container-fluid page-body-wrapper">
+>>>>>>> 0ff4bc926c3240709fa33b681d80926d1c4a75a0
       <!-- partial:partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
             <a class="nav-link" href="index.html">
+<<<<<<< HEAD
               <i class="ti-shield menu-icon"></i>
               <span class="menu-title">Dashboard</span>
+=======
+              <i class="ti-thumb-up menu-icon"></i>
+              <span class="menu-title">Đã duyệt</span>
+>>>>>>> 0ff4bc926c3240709fa33b681d80926d1c4a75a0
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+<<<<<<< HEAD
               <i class="ti-palette menu-icon"></i>
               <span class="menu-title">UI Elements</span>
+=======
+              <i class="ti-thumb-down menu-icon"></i>
+              <span class="menu-title">Chưa duyệt</span>
+>>>>>>> 0ff4bc926c3240709fa33b681d80926d1c4a75a0
               <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
+<<<<<<< HEAD
                 <li class="nav-item"> <a class="nav-link" href="{{asset('bootstrap/pages/ui-features/buttons.html')}}">Buttons</a></li>
                 <li class="nav-item"> <a class="nav-link" href="{{asset('bootstrap/pages/ui-features/typography.html')}}">Typography</a></li>
               </ul>
@@ -234,6 +277,13 @@
               <span class="menu-title">Documentation</span>
             </a>
           </li>
+=======
+                <li class="nav-item"> <a class="nav-link" href="{{asset('bootstrap/pages/ui-features/buttons.html')}}">Đang xử lý</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{asset('bootstrap/pages/ui-features/typography.html')}}">Không được duyệt</a></li>
+              </ul>
+            </div>
+          </li>
+>>>>>>> 0ff4bc926c3240709fa33b681d80926d1c4a75a0
         </ul>
       </nav>
       <!-- partial -->
@@ -248,9 +298,12 @@
                   <h4 class="font-weight-bold mb-0">RoyalUI Dashboard</h4>
                 </div>
                 <div>
+<<<<<<< HEAD
                     <button type="button" class="btn btn-primary btn-icon-text btn-rounded">
                       <i class="ti-clipboard btn-icon-prepend"></i>Report
                     </button>
+=======
+>>>>>>> 0ff4bc926c3240709fa33b681d80926d1c4a75a0
                 </div>
               </div>
             </div>
@@ -263,7 +316,11 @@
         <!-- partial -->
       </div>
       <!-- main-panel ends -->
+<<<<<<< HEAD
     </div>
+=======
+    </div> 
+>>>>>>> 0ff4bc926c3240709fa33b681d80926d1c4a75a0
     <!-- page-body-wrapper ends -->
   </div>
   <!-- container-scroller -->

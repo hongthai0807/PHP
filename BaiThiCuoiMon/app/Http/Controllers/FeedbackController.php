@@ -33,19 +33,8 @@ class FeedbackController extends BaseController
            
             
            }    
-    public function checkUserType(){
-        //code here
-        if (!Auth::user()){
-            return redirect()->route('login');
-        }
-        if(Auth::user()->userType==='ADM'){
-            return redirect()->route('admin');
-        }
-        if(Auth::user()->userType==='USR'){
-            return redirect()->route('user');
-        }
-    
-    }
+
+//  login           
     Public function checksession(Request $request){
         $data=$request->input('usrname');
         $data3=$request->input('password');
@@ -53,6 +42,8 @@ class FeedbackController extends BaseController
        $data4=DB::select('select id from admin where  Username=? and    Password=? and usr_Type=?',[$data,$data3,'usr']);
        $data5=DB::select('select id from admin where  Username=? and    Password=? and usr_Type=?',[$data,$data3,'adm']);
        $data6=DB::select('select id from admin where  Username=? and    Password=? and usr_Type=?',[$data,$data3,'Y']);
+       $data4=DB::select('select ID from admin where  username=? and    password=? and usr_Type=?',[$data,$data3,'usr']);
+       $data5=DB::select('select ID from admin where  username=? and    password=? and usr_Type=?',[$data,$data3,'adm']);
       
         if($data6){
             $request->session()->put('va',$data);

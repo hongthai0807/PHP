@@ -20,6 +20,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/admin',[FeedbackController::class,'admin']);
 Route::post('/user',[FeedbackController::class,'checksession']);
 
+<<<<<<< HEAD
 Route::get('/login',function(){
     if(session()->has('va') and session()->has('van')){
         return redirect('teacher');
@@ -32,6 +33,8 @@ Route::get('/login',function(){
   return view('login');
 })->name('login');
 
+=======
+>>>>>>> 0ff4bc926c3240709fa33b681d80926d1c4a75a0
 Route::get('/logout',function(){
   Session()->forget('va');
   session()->forget('van');
@@ -58,9 +61,13 @@ Route::get('/feedback',[FeedbackController::class,'feedback']);
 Route::get('/student',[FeedbackController::class,'student']);
 Route::get('/History',[FeedbackController::class,'history']);
 Route::get('/teacher',[FeedbackController::class,'teacher']);
+<<<<<<< HEAD
 Route::get('/addstudent',[FeedbackController::class,'addstudent']);
 Route::post('/addstudent',[FeedbackController::class,'editstudent']);
 Route::get('/editstudent',[FeedbackController::class,'crudstudent']);
+=======
+
+>>>>>>> 0ff4bc926c3240709fa33b681d80926d1c4a75a0
 ?>
 
 

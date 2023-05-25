@@ -4,6 +4,11 @@
 <head>    
 <meta name="viewport" content="width=device-width, initial-scale=1">    
 <style>    
+
+.main-panel{
+    margin-top: 10%;
+}
+
 h2{
   margin-left: 38%;
   font-size:300%;

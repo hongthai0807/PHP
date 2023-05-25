@@ -19,15 +19,21 @@
   <title>@yield('tittle_page')</title>
   @yield('mycss')
 </head>
+<style>
+.dropdown-item{
+font-size: 150%;
+}
+.dropdown-item:hover{
+background-color:#999999	;
+}
+
+</style>
 <body>
 
   <div class="container-scroller">
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
-      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="{{asset('bootstrap/images/logo.svg')}}" class="mr-2" alt="logo"/></a>
-        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="{{asset('bootstrap/images/logo-mini.svg')}}" alt="logo"/></a>
-      </div>
+
       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
         <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
           <span class="ti-view-list"></span>
@@ -46,9 +52,6 @@
         </ul>
         <ul class="navbar-nav navbar-nav-right">
           <li class="nav-item dropdown mr-1">
-            <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center" id="messageDropdown" href="#" data-toggle="dropdown">
-              <i class="ti-email mx-0"></i>
-            </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="messageDropdown">
               <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
               <a class="dropdown-item">
@@ -90,10 +93,7 @@
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
-              <i class="ti-bell mx-0"></i>
-              <span class="count"></span>
-            </a>
+
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="notificationDropdown">
               <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
               <a class="dropdown-item">
@@ -138,6 +138,7 @@
             </div>
           </li>
           <li class="nav-item nav-profile dropdown">
+<<<<<<< HEAD
             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
               <img src="{{asset('bootstrap/images/faces/face28.jpg')}}" alt="profile" style="
               width: 160px;zzz/>
@@ -152,6 +153,10 @@
              Properties
               </a>
               <a class="dropdown-item" href="logout1">
+=======
+
+              <a class="dropdown-item" href="logout">
+>>>>>>> 0ff4bc926c3240709fa33b681d80926d1c4a75a0
                 <i class="ti-power-off text-primary"></i>
                 Logout
               </a>
@@ -170,10 +175,11 @@
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">
-              <i class="ti-shield menu-icon"></i>
-              <span class="menu-title">Dashboard</span>
+            <a class="nav-link" href="http://127.0.0.1:8000/student">
+              <i class="ti-pencil-alt menu-icon"></i>
+              <span class="menu-title">Feedback</span>
             </a>
+<<<<<<< HEAD
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
@@ -234,28 +240,17 @@
               <span class="menu-title">Documentation</span>
             </a>
           </li>
+=======
+
+>>>>>>> 0ff4bc926c3240709fa33b681d80926d1c4a75a0
         </ul>
       </nav>
       <!-- partial -->
-      <div class="main-panel">
+      <div class="main-panel" style="margin-top: 10%">
           <section>
             @yield('body_content')
           </section>
-          <div class="row">
-            <div class="col-md-12 grid-margin">
-              <div class="d-flex justify-content-between align-items-center">
-                <div>
-                  <h4 class="font-weight-bold mb-0">RoyalUI Dashboard</h4>
-                </div>
-                <div>
-                    <button type="button" class="btn btn-primary btn-icon-text btn-rounded">
-                      <i class="ti-clipboard btn-icon-prepend"></i>Report
-                    </button>
-                </div>
-              </div>
-            </div>
-            
-          </div>
+
             
         <!-- content-wrapper ends -->
         <!-- partial:partials/_footer.html -->
