@@ -29,7 +29,7 @@
                             </div>
                           
                             <form class="text-center" method="post" action="/user" style="margin: 6vh auto 0">
-                              @csrf
+                            @csrf
                                 <div class="mb-3"><input class="form-control" type="name" name="usrname" placeholder="Email" />
          
                           
@@ -50,4 +50,4 @@
     <script src="https://kit.fontawesome.com/b6daa7a43d.js" crossorigin="anonymous"></script>
 </body>
 
-</html>
+</html> 

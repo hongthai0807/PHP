@@ -19,6 +19,15 @@
   <title>@yield('tittle_page')</title>
   @yield('mycss')
 </head>
+<style>
+.dropdown-item{
+font-size: 150%;
+}
+
+.dropdown-item:hover{
+background-color:#999999	;
+}
+</style>
 <body>
 
   <div class="container-scroller">
@@ -42,9 +51,6 @@
         </ul>
         <ul class="navbar-nav navbar-nav-right">
           <li class="nav-item dropdown mr-1">
-            <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center" id="messageDropdown" href="#" data-toggle="dropdown">
-              <i class="ti-email mx-0"></i>
-            </a>
            <!-- <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="messageDropdown">
               <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
               <a class="dropdown-item">
@@ -86,10 +92,6 @@
             </div> -->
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
-              <i class="ti-bell mx-0"></i>
-              <span class="count"></span>
-            </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="notificationDropdown">
               <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
               <a class="dropdown-item">
@@ -154,13 +156,13 @@
         <ul class="nav">
           <li class="nav-item">
             <a class="nav-link" href="index.html">
-              <i class="ti-shield menu-icon"></i>
+              <i class="ti-thumb-up menu-icon"></i>
               <span class="menu-title">Đã duyệt</span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-              <i class="ti-palette menu-icon"></i>
+              <i class="ti-thumb-down menu-icon"></i>
               <span class="menu-title">Chưa duyệt</span>
               <i class="menu-arrow"></i>
             </a>

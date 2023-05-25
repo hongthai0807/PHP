@@ -34,8 +34,8 @@ class FeedbackController extends BaseController
         $data=$request->input('usrname');
         $data3=$request->input('password');
         
-       $data4=DB::select('select id from admin where  Username=? and    Password=? and usr_Type=?',[$data,$data3,'usr']);
-       $data5=DB::select('select id from admin where  Username=? and    Password=? and usr_Type=?',[$data,$data3,'adm']);
+       $data4=DB::select('select ID from admin where  username=? and    password=? and usr_Type=?',[$data,$data3,'usr']);
+       $data5=DB::select('select ID from admin where  username=? and    password=? and usr_Type=?',[$data,$data3,'adm']);
       
         if($data4){
             $request->session()->put('usrname',$data);

@@ -19,6 +19,15 @@
   <title>@yield('tittle_page')</title>
   @yield('mycss')
 </head>
+<style>
+    .dropdown-item{
+    font-size: 150%;
+  }
+  .dropdown-item:hover{
+    background-color:#999999	;
+  }
+
+</style>
 <body>
 
   <div class="container-scroller">
@@ -43,9 +52,6 @@
         </ul>
         <ul class="navbar-nav navbar-nav-right">
           <li class="nav-item dropdown mr-1">
-            <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center" id="messageDropdown" href="#" data-toggle="dropdown">
-              <i class="ti-email mx-0"></i>
-            </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="messageDropdown">
               <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
               <a class="dropdown-item">
@@ -153,7 +159,7 @@
         <ul class="nav">
           <li class="nav-item">
             <a class="nav-link" href="http://127.0.0.1:8000/student">
-              <i class="ti-shield menu-icon"></i>
+              <i class="ti-pencil-alt menu-icon"></i>
               <span class="menu-title">Feedback</span>
             </a>
 
