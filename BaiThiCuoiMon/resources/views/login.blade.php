@@ -6,6 +6,7 @@
     <title>Form Login</title>
     <link rel="stylesheet" href="{{asset('bootstrap/css/bootstrap.css')}}">
 </head>
+
 @if(\Session::has('message'))
 <div class="alert alert-info">
     {{ \Session::get('message') }}

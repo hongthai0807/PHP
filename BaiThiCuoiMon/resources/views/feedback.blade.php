@@ -86,7 +86,7 @@ input[type=submit]:hover {
   <form>    
     <div class="row">    
       <div class="col-25">    
-        <label for="fname">Full Name</label>    
+        <label for="fname">Ten mon</label>    
       </div>    
       <div class="col-75">    
         <input type="text" id="fname" name="fullname" placeholder="Your full name..">    
@@ -94,15 +94,54 @@ input[type=submit]:hover {
     </div>    
     <div class="row">    
         <div class="col-25">    
-          <label for="email">Email</label>    
+            <label for="fname">ID mon</label>    
+          </div>    
+          <div class="col-75">
+       <select name="" id="">
+        @foreach($data as $feedback)        
+        <option value="">{{ $feedback->ID_monhoc}}</option>
+        @endforeach
+       </select>
+          </div>
+        
+       
+          
+      </div>     
+      <div class="row">    
+        <div class="col-25">    
+          <label for="feed_back">Ten Mon</label>    
         </div>    
         <div class="col-75">    
-          <input type="email" id="email" name="mailid" placeholder="Your email ..">    
+            <input type="text" id="subject" name="subject" placeholder="Your Subject..">     
         </div>    
-      </div>     
+      </div> 
+      <div class="row">    
+        <div class="col-25">    
+          <label for="feed_back">Ten SV</label>    
+        </div>    
+        <div class="col-75">    
+            <input type="text" id="SV" name="SV" placeholder="Your Subject..">     
+        </div>    
+      </div>    
+      <div class="row">    
+        <div class="col-25">    
+          <label for="feed_back">Masv</label>    
+        </div>    
+        <div class="col-75">    
+            <input type="text" id="MA" name="subject" placeholder="Your Subject..">     
+        </div>    
+      </div> 
+      <div class="row">    
+        <div class="col-25">    
+          <label for="feed_back">Ten SV</label>    
+        </div>    
+        <div class="col-75">    
+            <input type="text" id="SV" name="SV" placeholder="Your Subject..">     
+        </div>    
+      </div>    
     <div class="row">    
       <div class="col-25">    
-        <label for="feed_back">Feedback</label>    
+        <label for="feed_back">Ten student</label>    
       </div>    
       <div class="col-75">    
         <textarea id="subject" name="subject" placeholder="Write here.." style="height:200px"></textarea>    

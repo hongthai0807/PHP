@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Student</title>
+  <title>Teacher</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="{{asset('bootstrap/vendors/ti-icons/css/themify-icons.css')}}">
   <link rel="stylesheet" href="{{asset('bootstrap/vendors/base/vendor.bundle.base.css')}}">
@@ -140,7 +140,7 @@
           <li class="nav-item nav-profile dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
               <img src="{{asset('bootstrap/images/faces/face28.jpg')}}" alt="profile" style="
-              width: 160px;zzz/>
+              width: 160px;/>
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
               <a class="dropdown-item">
@@ -151,7 +151,7 @@
                 <i class="ti-settings text-primary"></i>
              Properties
               </a>
-              <a class="dropdown-item" href="logout1">
+              <a class="dropdown-item" href="logout">
                 <i class="ti-power-off text-primary"></i>
                 Logout
               </a>
@@ -201,9 +201,9 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="feedback">
+            <a class="nav-link" href="{{asset('bootstrap/pages/tables/basic-table.html')}}">
               <i class="ti-view-list-alt menu-icon"></i>
-              <span class="menu-title">Feedback</span>
+              <span class="menu-title">Tables</span>
             </a>
           </li>
           <li class="nav-item">
