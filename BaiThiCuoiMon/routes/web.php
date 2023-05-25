@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
       return view('login');
   });
 Route::get('/admin',[App\Http\Controllers\FeedbackController::class,'admin'])->name('admin');
-Route::post('/user',[FeedbackController::class,'checksession'])->name('user');
+Route::post('/test',[FeedbackController::class,'checksession'])->name('user');
 
 Route::get('/login',function(){
     if(session()->has('usrname') and session()->has('password')){
