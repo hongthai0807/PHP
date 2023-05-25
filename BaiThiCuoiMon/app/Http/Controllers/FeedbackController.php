@@ -28,19 +28,8 @@ class FeedbackController extends BaseController
          return view("admin");
             
            }    
-    public function checkUserType(){
-        //code here
-        if (!Auth::user()){
-            return redirect()->route('login');
-        }
-        if(Auth::user()->userType==='ADM'){
-            return redirect()->route('admin');
-        }
-        if(Auth::user()->userType==='USR'){
-            return redirect()->route('user');
-        }
-    
-    }
+
+//  login           
     Public function checksession(Request $request){
         $data=$request->input('usrname');
         $data3=$request->input('password');
@@ -61,10 +50,10 @@ class FeedbackController extends BaseController
             return redirect('login');
         }
        
-
-
     }
-   
+// login
+
+
     public function teacher(){
         return view('teacher1');
     }
