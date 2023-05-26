@@ -1,48 +1,33 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>ONE - Personal Resume</title>
-<link href="{{ asset('bootstrap/css/styles.css') }}" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
-<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+@extends('layout.student')
 
-<script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js?ver=3.3"></script>	
-<script type="text/javascript" src="{{ asset('bootstrap/js/jquery.prettyPhoto.js') }}"></script>
-<script type="text/javascript" src="{{ asset('bootstrap/js/jquery.easing.1.3.js') }}"></script>
+@section('title_page')
 
-</head>
+home page
 
-<body>
-<div id="header">
-	<div id="logo"><a href="#"><img src="{{ asset('bootstrap/images/logo.png') }}"></a></div>
-	<ul id="main-menu">
-    	<li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#connect">Connect</a></li>
-    </ul>
-</div>
+@endsection
 
-<div id="container">
+@section('mycss')
 
-<!--Begin About Section-->
-    <div id="about">
-    	<h1>About</h1>
-        <ul id="top-social">
-        	<li><a href="#" class="facebook">Facebook</a></li>
-            <li><a href="#" class="twitter">Twitter</a></li>
-            <li><a href="#" class="linkedin">LinkedIn</a></li>
-        </ul>
-        <div class="top-divider"></div>
-        <div class="content">
-        	<img src="{{asset('bootstrap/images/faces/face28.jpg')}}" />
-            @foreach($data as $row)
-            <h2>MSSV: {{ $row->ID_student }}</h2>
-            <h2>Firstname: {{ $row->First_name  }}</h2>
-            <h2>Email:{{ $row->Email }}</h2>
-            @endforeach
-           
-</body>
-</html>
+@endsection
+
+@section('body_content')
+
+<div style="text-align: center;">History Feedback</div>
+<table class="table">
+@foreach($query as $row)
+
+  <tbody>
+    <tr>
+    <td>{{$row->content}}</td>
+    </tr>
+  </tbody>
+  @endforeach  
+
+</table>
+
+
+@endsection
+
+@section('myscript')
+
+@endsection

@@ -162,6 +162,13 @@
               <i class="ti-pencil-alt menu-icon"></i>
               <span class="menu-title">Feedback</span>
             </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:8000/history">
+              <i class="ti-pencil-alt menu-icon"></i>
+              <span class="menu-title">History</span>
+            </a>
+          </li>
 
         </ul>
       </nav>

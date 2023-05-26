@@ -17,29 +17,42 @@ use Illuminate\Support\Facades\Route;
  Route::get('/', function () {
       return view('login');
   });
-Route::get('/admin',[App\Http\Controllers\FeedbackController::class,'admin'])->name('admin');
-Route::post('/test',[FeedbackController::class,'checksession'])->name('user');
-
-Route::get('/login',function(){
-    if(session()->has('usrname') and session()->has('password')){
-        return redirect('student');
-    }else if(session()->has('Home') and session()->has('class')){
-      return redirect('admin');
-    }
-  return view('login');
-})->name('login');
+Route::get('/admin',[FeedbackController::class,'admin']);
+Route::post('/user',[FeedbackController::class,'checksession']);
 
 Route::get('/logout',function(){
-  Session()->forget('usrname');
-  session()->forget('password');
-  if(!Session()->has('usrname') and  !session()->has('password')){
+  Session()->forget('va');
+  session()->forget('van');
+  if(!Session()->has('va') and  !session()->has('van')){
     return view('login');
   }
 });
+Route::get('/logout1',function(){
+  Session()->forget('1');
+  session()->forget('2');
+  if(!Session()->has('1') and  !session()->has('2')){
+    return view('login');
+  }
+});
+Route::get('/logout2',function(){
+  Session()->forget('3');
+  session()->forget('4');
+  if(!Session()->has('3') and  !session()->has('4')){
+    return view('login');
+  }
+});
+
 Route::get('/feedback',[FeedbackController::class,'feedback']);
 Route::get('/student',[FeedbackController::class,'student']);
-Route::get('/History',[FeedbackController::class,'history']);
+Route::get('/history',[FeedbackController::class,'history']);
 Route::get('/teacher',[FeedbackController::class,'teacher']);
+Route::get('/addstudent',[FeedbackController::class,'addstudent']);
+Route::post('/addstudent',[FeedbackController::class,'editstudent']);
+Route::get('/editstudent',[FeedbackController::class,'crudstudent']);
+Route::get('/user',[UsersController::class,'info']);
+Route::get('/addteacher',[FeedbackController::class,'addteacher']);
+Route::post('/addteacher',[FeedbackController::class,'editteacher']);
+Route::get('/editteacher',[FeedbackController::class,'crudteacher']);
 
 ?>
 
