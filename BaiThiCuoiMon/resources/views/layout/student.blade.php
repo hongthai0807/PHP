@@ -20,12 +20,12 @@
   @yield('mycss')
 </head>
 <style>
-    .dropdown-item{
-    font-size: 150%;
-  }
-  .dropdown-item:hover{
-    background-color:#999999	;
-  }
+.dropdown-item{
+font-size: 150%;
+}
+.dropdown-item:hover{
+background-color:#999999	;
+}
 
 </style>
 <body>
@@ -138,8 +138,20 @@
             </div>
           </li>
           <li class="nav-item nav-profile dropdown">
-
-              <a class="dropdown-item" href="logout">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+              <img src="{{asset('bootstrap/images/faces/face28.jpg')}}" alt="profile" style="
+              width: 160px;zzz/>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+              <a class="dropdown-item">
+                <i class="ti-settings text-primary"></i>
+                Settings
+              </a>
+              <a class="dropdown-item" href="History">
+                <i class="ti-settings text-primary"></i>
+             Properties
+              </a>
+              <a class="dropdown-item" href="logout1">
                 <i class="ti-power-off text-primary"></i>
                 Logout
               </a>
@@ -162,6 +174,7 @@
               <i class="ti-pencil-alt menu-icon"></i>
               <span class="menu-title">Feedback</span>
             </a>
+<<<<<<< HEAD
           </li>
           <li class="nav-item">
             <a class="nav-link" href="http://127.0.0.1:8000/history">
@@ -169,7 +182,72 @@
               <span class="menu-title">History</span>
             </a>
           </li>
+=======
+<<<<<<< HEAD
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <i class="ti-palette menu-icon"></i>
+              <span class="menu-title">UI Elements</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="{{asset('bootstrap/pages/ui-features/buttons.html')}}">Buttons</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{asset('bootstrap/pages/ui-features/typography.html')}}">Typography</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{asset('bootstrap/pages/forms/basic_elements.html')}}">
+              <i class="ti-layout-list-post menu-icon"></i>
+              <span class="menu-title">Form elements</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{asset('bootstrap/pages/charts/chartjs.html')}}">
+              <i class="ti-pie-chart menu-icon"></i>
+              <span class="menu-title">Charts</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="feedback">
+              <i class="ti-view-list-alt menu-icon"></i>
+              <span class="menu-title">Feedback</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{asset('bootstrap/pages/icons/themify.html')}}">
+              <i class="ti-star menu-icon"></i>
+              <span class="menu-title">Icons</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+              <i class="ti-user menu-icon"></i>
+              <span class="menu-title">User Pages</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="{{asset('bootstrap/pages/samples/login.html')}}"> Login </a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{asset('bootstrap/pages/samples/login-2.html')}}"> Login 2 </a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{asset('bootstrap/pages/samples/register.html')}}"> Register </a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{asset('bootstrap/pages/samples/register-2.html')}}"> Register 2 </a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{asset('bootstrap/pages/samples/lock-screen.html')}}"> Lockscreen </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{asset('bootstrap/documentation/documentation.html')}}">
+              <i class="ti-write menu-icon"></i>
+              <span class="menu-title">Documentation</span>
+            </a>
+          </li>
+=======
+>>>>>>> b1f61c656af74b41461efe686991d40e6398d6a0
 
+>>>>>>> 0ff4bc926c3240709fa33b681d80926d1c4a75a0
         </ul>
       </nav>
       <!-- partial -->

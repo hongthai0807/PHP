@@ -19,7 +19,6 @@ use Illuminate\Support\Facades\Route;
   });
 Route::get('/admin',[FeedbackController::class,'admin']);
 Route::post('/user',[FeedbackController::class,'checksession']);
-
 Route::get('/logout',function(){
   Session()->forget('va');
   session()->forget('van');
@@ -53,7 +52,6 @@ Route::get('/user',[UsersController::class,'info']);
 Route::get('/addteacher',[FeedbackController::class,'addteacher']);
 Route::post('/addteacher',[FeedbackController::class,'editteacher']);
 Route::get('/editteacher',[FeedbackController::class,'crudteacher']);
-
 ?>
 
 

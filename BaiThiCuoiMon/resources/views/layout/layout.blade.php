@@ -150,7 +150,7 @@
                 <i class="fa-sharp fa-light fa-clock-rotate-left"></i>
                 Properties
               </a>
-              <a class="dropdown-item" href="logout">
+              <a class="dropdown-item" href="logout2">
                 <i class="ti-power-off text-primary"></i>
                 Logout
               </a>
@@ -174,23 +174,13 @@
               <span class="menu-title">Dashboard</span>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-              <i class="ti-palette menu-icon"></i>
-              <span class="menu-title">UI Elements</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="ui-basic">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="{{asset('bootstrap/pages/ui-features/buttons.html')}}">Buttons</a></li>
-                <li class="nav-item"> <a class="nav-link" href="{{asset('bootstrap/pages/ui-features/typography.html')}}">Typography</a></li>
-              </ul>
-            </div>
+         
+            
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{asset('bootstrap/pages/forms/basic_elements.html')}}">
+            <a class="nav-link" href="{{ url('/editstudent') }}">
               <i class="ti-layout-list-post menu-icon"></i>
-              <span class="menu-title">Form elements</span>
+              <span class="menu-title">Sinh vien</span>
             </a>
           </li>
           <li class="nav-item">
