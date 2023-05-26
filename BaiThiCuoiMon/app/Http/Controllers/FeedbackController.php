@@ -82,7 +82,6 @@ class FeedbackController extends BaseController
         }else{
             return view('teacher1');
         }
-<<<<<<< HEAD
        
     }   
     public function history(){
@@ -98,21 +97,6 @@ public function addstudent(){
 }
 
 
-=======
-    
-    }   
-    public function History(){
-        $query=DB::table("sinhvien");
-        $query=$query->select('*');
-        $data=$query->paginate(1);
-        return view('History',$data);
-    }
-public function addstudent(){
-    $data=DB::table("giaovien")->select('*')->get();
-    return view('addstudent',compact('data'));
- 
-}
->>>>>>> b1f61c656af74b41461efe686991d40e6398d6a0
 public function editstudent(Request $request){
 $firstname=$request->input('First_name');
 $idstudent=$request->input('ID_student');
@@ -122,7 +106,6 @@ $tel=$request->input('tel');
 $idteacher=$request->input('drop');
 DB::insert('insert into sinhvien (Id_student,First_name,Last_name,Email,Id_teacher,tel) values(?,?,?,?,?,?)',[$idstudent,$firstname,$lastname,$Email,$idteacher,$tel]);
 return redirect('editstudent');
-<<<<<<< HEAD
 
 }
 public function crudstudent(){
@@ -178,12 +161,5 @@ public function crudteacher(){
 
 
 
-=======
-}
-public function crudstudent(){
-    $data=DB::table("sinhvien")->select('*')->get();
-    return view('crudstudent',compact('data'));
-}
->>>>>>> b1f61c656af74b41461efe686991d40e6398d6a0
 }
 ?>
