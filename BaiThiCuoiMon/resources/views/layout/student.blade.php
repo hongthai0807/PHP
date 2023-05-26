@@ -174,7 +174,6 @@ background-color:#999999	;
               <i class="ti-pencil-alt menu-icon"></i>
               <span class="menu-title">Feedback</span>
             </a>
-<<<<<<< HEAD
           </li>
           <li class="nav-item">
             <a class="nav-link" href="http://127.0.0.1:8000/history">
@@ -182,8 +181,6 @@ background-color:#999999	;
               <span class="menu-title">History</span>
             </a>
           </li>
-=======
-<<<<<<< HEAD
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
@@ -244,10 +241,6 @@ background-color:#999999	;
               <span class="menu-title">Documentation</span>
             </a>
           </li>
-=======
->>>>>>> b1f61c656af74b41461efe686991d40e6398d6a0
-
->>>>>>> 0ff4bc926c3240709fa33b681d80926d1c4a75a0
         </ul>
       </nav>
       <!-- partial -->
